@@ -13,7 +13,7 @@
   # run the container
   docker run $env:containername
   ```
-4. GitHub Actions Workflow for automation
+4. GitHub Actions Workflow for automated testing
 
 
 
