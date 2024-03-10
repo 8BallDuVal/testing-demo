@@ -1,0 +1,16 @@
+name: Python Docker Test Workflow
+
+on: workflow_dispatch
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+
+    - name: Build Docker image
+      run: docker build . -t python-test-container
+
+    - name: Run Docker container
+      run: docker run python-test-container
