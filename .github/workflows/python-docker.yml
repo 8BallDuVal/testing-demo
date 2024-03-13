@@ -4,7 +4,7 @@ on: [push, workflow_dispatch]
 
 jobs:
   build-and-test:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted-corp
     steps:
     - name: Check out repository
       uses: actions/checkout@v2
